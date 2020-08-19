@@ -12,17 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6b69621-e22c-4ed1-b4e3-4d9b01cc0bff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Config/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Config/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/HTTP/ContentSecurityPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/HTTP/ContentSecurityPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/Helpers/html_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/Helpers/html_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/Test/DOMParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/Test/DOMParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/Test/FeatureResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/Test/FeatureResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/ThirdParty/Escaper/Escaper.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/ThirdParty/Escaper/Escaper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/ThirdParty/Kint/Renderer/PlainRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/ThirdParty/Kint/Renderer/PlainRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/ThirdParty/Kint/Renderer/RichRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/ThirdParty/Kint/Renderer/RichRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/View/Filters.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/View/Filters.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,7 @@
       <workItem from="1597690047951" duration="2974000" />
       <workItem from="1597693205411" duration="673000" />
       <workItem from="1597767390318" duration="14857000" />
-      <workItem from="1597852607706" duration="8664000" />
+      <workItem from="1597852607706" duration="9485000" />
     </task>
     <servers />
   </component>
