@@ -3,3 +3,7 @@ writable/*
 /vendor/
 
 node_modules/*
+
+# Coisas da ide
+.idea/
+*.iml
