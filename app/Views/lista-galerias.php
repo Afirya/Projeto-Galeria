@@ -3,9 +3,11 @@
 <?php $this->extend('template'); ?>
 
 <?php $this->section('content'); ?>
-    <?php foreach ($galerias as $item) { ?>
+    <?php foreach ($galerias as $chave => $item) { ?>
         <p class="classe1">
-            <?php echo $item; ?>
+            <a href="/galeria/<?php echo $chave; ?>">
+                <?php echo $item; ?>
+            </a>
         </p>
     <?php } ?>
 <?php $this->endSection(); ?>
