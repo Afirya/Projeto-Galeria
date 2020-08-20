@@ -1,4 +1,4 @@
-var controle = 0
+var controle = 0;
 var imagens = document.getElementsByClassName("imagem");
 var numeroDeImagens = imagens.length;
 
