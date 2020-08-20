@@ -1,0 +1,1 @@
+var controle=0,imagens=document.getElementsByClassName("imagem"),numeroDeImagens=imagens.length;function PassarProxima(){controle<numeroDeImagens-1&&controle++,AtualizarFoto()}function PassarAnterior(){0<controle&&controle--,AtualizarFoto()}function AtualizarFoto(){for(var o=0;o<numeroDeImagens;o++){var e=imagens[o];e.style.display=o==controle?"inline-block":"none"}}
