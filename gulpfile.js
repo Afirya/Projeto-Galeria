@@ -6,8 +6,8 @@ const {task, series} = require('gulp');
 
 task('css', function() {
     return gulp.src([
-        './public/css/teste.css',
-        './public/css/teste-2.css',
+        './public/css/galeria.css',
+        './public/css/galerias.css',
     ])
     .pipe(concat('styles.css'))
     .pipe( gulp.dest('public/dist/css'))
@@ -15,7 +15,7 @@ task('css', function() {
 
 task('js', function() {
     return gulp.src([
-        './public/js/teste.js',
+        './public/js/galeria.js',
     ])
         .pipe(concat('scripts.js'))
         .pipe(uglify())
