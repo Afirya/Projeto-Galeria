@@ -2,18 +2,23 @@
 
 class Galeria extends BaseController
 {
-	public function index()
+	public function index($a)
 	{
-        $imagens= [
-            "/imagens/cachorro-nao-bebe-agua-pet.jpg",
-            "/imagens/mato.jpg",
-            "/imagens/fotografia.jpg",
-            "/imagens/bus.jpg",
-            "/imagens/pra.jpg",
+	    $galerias = [
+            [
+                "/imagens/cachorro-nao-bebe-agua-pet.jpg",
+                "/imagens/mato.jpg",
+                "/imagens/fotografia.jpg",
+            ],
+            [
+                "/imagens/bus.jpg",
+                "/imagens/pra.jpg",
+            ],
+
         ];
 
-        $data['imagens']   = $imagens;
         $data["titulo"] = "Galeria";
+        $data["imagens"] = $galerias[$a];
         echo view('galeria', $data);
 	}
 }
