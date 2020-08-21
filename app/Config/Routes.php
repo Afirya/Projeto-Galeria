@@ -32,6 +32,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Galerias::index');
 $routes->add('galeria/(:num)', 'Galeria::index/$1');
+$routes->add('sobre', 'Sobre::index');
 
 /**
  * --------------------------------------------------------------------
