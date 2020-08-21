@@ -9,7 +9,7 @@
     <!-- Galeria -->
     <div class="galeria">
         <?php foreach ($imagens as $chave => $item) { ?>
-            <img src="<?php echo $item; ?>"  width="500" class="imagem" <?php echo ($chave > 0) ? 'style="display: none;"' : ''; ?> >
+            <img src="<?php echo $item->caminho; ?>"  width="500" class="imagem" <?php echo ($chave > 0) ? 'style="display: none;"' : ''; ?> >
         <?php } ?>
     </div>
 
