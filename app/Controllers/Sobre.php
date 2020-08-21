@@ -1,15 +1,9 @@
 <?php namespace App\Controllers;
 
-class Galeria extends BaseController
+class Sobre extends BaseController
 {
-	public function index($a)
+	public function index()
 	{
-        $db = \Config\Database::connect();
-        $query = $db->query("select * from fotos where idgaleria = $a;");
-        $imagens = $query->getResult();
-
-        $data["titulo"] = "Galeria";
-        $data["imagens"] = $imagens;
-        echo view('galeria', $data);
+        return view('sobre');
 	}
 }
