@@ -4,21 +4,12 @@ class Galeria extends BaseController
 {
 	public function index($a)
 	{
-	    $galerias = [
-            [
-                "/imagens/cachorro-nao-bebe-agua-pet.jpg",
-                "/imagens/mato.jpg",
-                "/imagens/fotografia.jpg",
-            ],
-            [
-                "/imagens/bus.jpg",
-                "/imagens/pra.jpg",
-            ],
-
-        ];
+        $db = \Config\Database::connect();
+        $query = $db->query("select * from fotos where idgaleria = $a;");
+        $imagens = $query->getResult();
 
         $data["titulo"] = "Galeria";
-        $data["imagens"] = $galerias[$a];
+        $data["imagens"] = $imagens;
         echo view('galeria', $data);
 	}
 }
