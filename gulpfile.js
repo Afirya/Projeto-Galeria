@@ -8,6 +8,7 @@ task('css', function() {
     return gulp.src([
         './public/css/galeria.css',
         './public/css/galerias.css',
+        './public/css/menu.css',
     ])
     .pipe(concat('styles.css'))
     .pipe( gulp.dest('public/dist/css'))
