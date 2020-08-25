@@ -1,4 +1,5 @@
-<?php /** @var array $galerias */?>
+<?php /** @var int $id_galeria */?>
+<?php /** @var string $mensagem */?>
 
 <?php $this->extend('template'); ?>
 
@@ -7,11 +8,12 @@
         Nova Galeria
     </h1>
 
-    <form action="/galeria/criar" method="post">
-        <input type="text" name="nome" placeholder="Nome da Galeria">
+    <form action="/galeria/subir_imagem/<?php echo $id_galeria; ?>" method="post" enctype="multipart/form-data">
+        <input name="imagem" type="file">
         <input type="submit" value="criar">
     </form>
 
+<?php echo $mensagem; ?>
 <?php $this->endSection(); ?>
 
 
