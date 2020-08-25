@@ -33,6 +33,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Galerias::index');
 $routes->get('galeria/(:num)', 'Galeria::index/$1');
 $routes->get('sobre', 'Sobre::index');
+$routes->get('galeria/remover', 'Galeria::remover/$1');
+$routes->get('galeria/adicionar', 'Galeria::adicionar');
+$routes->post('galeria/criar', 'Galeria::criar');
+
 
 /**
  * --------------------------------------------------------------------
