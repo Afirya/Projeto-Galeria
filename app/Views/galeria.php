@@ -1,11 +1,15 @@
 <?php /** @var array $imagens */?>
+<?php /** @var int $id_galeria */?>
 <?php $this->extend('template'); ?>
 
 <?php $this->section('content'); ?>
     <p>
         Bem vindo a galeria de fotos da estagiária
     </p>
-
+    <!-- Adiciona foto -->
+    <a href="/galeria/adicionar_imagem/<?php echo $id_galeria; ?>" class="adicionar-imagem">
+        Adicionar
+    </a>
     <!-- Galeria -->
     <div class="galeria">
         <?php foreach ($imagens as $chave => $item) { ?>
