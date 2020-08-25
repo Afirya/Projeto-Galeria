@@ -8,8 +8,14 @@
             <a href="/galeria/<?php echo $item->id; ?>">
                 <?php echo $item->nome; ?>
             </a>
+            <a href="/galeria/remover/<?php echo $item->id; ?>" class="remover">
+                Remover
+            </a>
         </p>
     <?php } ?>
+    <a href="/galeria/adicionar" class="adicionar">
+        Adicionar
+    </a>
 <?php $this->endSection(); ?>
 
 
