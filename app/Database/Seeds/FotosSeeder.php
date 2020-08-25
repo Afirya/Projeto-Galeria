@@ -8,27 +8,32 @@ class FotosSeeder extends \CodeIgniter\Database\Seeder
             [
                 'id' => null,
                 'id_galeria' => '1',
-                'caminho'    => '/imagens/cachorro-nao-bebe-agua-pet.jpg'
+                'caminho'    => '/imagens/cachorro-nao-bebe-agua-pet.jpg',
+                'data' => '2000-08-10 15:04:22'
             ],
             [
                 'id' => null,
                 'id_galeria' => '1',
-                'caminho'    => '/imagens/fotografia.jpg'
+                'caminho'    => '/imagens/fotografia.jpg',
+                'data' => '2000-08-12 15:04:22'
             ],
             [
                 'id' => null,
                 'id_galeria' => '1',
-                'caminho'    => '/imagens/mato.jpg'
+                'caminho'    => '/imagens/mato.jpg',
+                'data' => '2000-08-11 15:04:22'
             ],
             [
                 'id' => null,
                 'id_galeria' => '2',
-                'caminho'    => '/imagens/bus.jpg'
+                'caminho'    => '/imagens/bus.jpg',
+                'data' => '2000-08-13 15:04:22'
             ],
             [
                 'id' => null,
                 'id_galeria' => '2',
-                'caminho'    => '/imagens/pra.jpg'
+                'caminho'    => '/imagens/pra.jpg',
+                'data' => '2000-08-16 15:04:22'
             ],
         ];
 
