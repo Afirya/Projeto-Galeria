@@ -1,5 +1,3 @@
-<?php /** @var array $galerias */?>
-
 <?php $this->extend('template'); ?>
 
 <?php $this->section('content'); ?>
