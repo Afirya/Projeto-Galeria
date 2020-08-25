@@ -9,6 +9,7 @@ task('css', function() {
         './public/css/galeria.css',
         './public/css/galerias.css',
         './public/css/menu.css',
+        './public/css/comum.css',
     ])
     .pipe(concat('styles.css'))
     .pipe( gulp.dest('public/dist/css'))
