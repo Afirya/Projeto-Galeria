@@ -50,3 +50,10 @@ p {
 .menu {
     text-align: center;
 }
+
+.remover {
+    color: red;
+}
+a:visited {
+    color: blue;
+}
