@@ -1,6 +1,5 @@
 var controle = 0;
-var imagens = document.getElementsByClassName("imagem");
-var numeroDeImagens = imagens.length;
+var numeroDeImagens = $('.imagem').length;
 
 function PassarProxima() {
     if(controle < (numeroDeImagens-1)) {
@@ -17,15 +16,11 @@ function PassarAnterior() {
 }
 
 function AtualizarFoto() {
-
-    for(var i = 0 ; i < numeroDeImagens; i++) {
-        var umaImagem = imagens[i];
-        if (i == controle) {
-            umaImagem.style.display = "inline-block";
+    $('.imagem').each(function(chave, valor) {
+        if (chave == controle) {
+            $(valor).css('display','inline-block');
         } else {
-            umaImagem.style.display = "none";
+            $(valor).css('display','none');
         }
-
-    }
-
+    });
 }
