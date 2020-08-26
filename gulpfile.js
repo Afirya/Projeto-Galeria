@@ -17,6 +17,7 @@ task('css', function() {
 
 task('js', function() {
     return gulp.src([
+        './node_modules/jquery/dist/jquery.min.js',
         './public/js/galeria.js',
     ])
         .pipe(concat('scripts.js'))
