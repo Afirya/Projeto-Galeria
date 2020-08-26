@@ -7,27 +7,27 @@ class GaleriasSeeder extends \CodeIgniter\Database\Seeder
         $data = [
             [
                 'id' => null,
-                'nome'    => 'Galeria 1',
+                'nome' => 'Galeria 1',
                 'data' => '2000-08-16 15:04:22'
             ],
             [
                 'id' => null,
-                'nome'    => 'Galeria 2',
+                'nome' => 'Galeria 2',
                 'data' => '2000-08-16 15:04:22'
             ],
             [
                 'id' => null,
-                'nome'    => 'Galeria 3',
+                'nome' => 'Galeria 3',
                 'data' => '2000-08-16 15:04:22'
             ],
             [
                 'id' => null,
-                'nome'    => 'Galeria 4',
+                'nome' => 'Galeria 4',
                 'data' => '2000-08-16 15:04:22'
             ],
             [
                 'id' => null,
-                'nome'    => 'Galeria 5',
+                'nome' => 'Galeria 5',
                 'data' => '2000-08-16 15:04:22'
             ]
         ];
