@@ -9,10 +9,9 @@ class AdicionaDataNaTabelaFotos extends Migration
         $data = [
             'data' => ['type' => 'DATETIME']
         ];
+
         $this->forge->addColumn('fotos', $data);
     }
-
-    //--------------------------------------------------------------------
 
     public function down()
     {

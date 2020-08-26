@@ -13,7 +13,7 @@
         <input type="submit" value="criar">
     </form>
 
-<?php echo $mensagem; ?>
+    <?php echo $mensagem; ?>
 <?php $this->endSection(); ?>
 
 

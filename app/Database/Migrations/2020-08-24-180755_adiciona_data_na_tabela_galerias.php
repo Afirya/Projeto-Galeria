@@ -9,10 +9,9 @@ class AdicionaDataNaTabelaGalerias extends Migration
 	    $data = [
             'data' => ['type' => 'DATETIME']
         ];
+
         $this->forge->addColumn('galerias', $data);
 	}
-
-	//--------------------------------------------------------------------
 
 	public function down()
 	{

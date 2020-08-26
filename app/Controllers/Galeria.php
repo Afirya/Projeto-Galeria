@@ -11,6 +11,7 @@ class Galeria extends BaseController
         $data["titulo"] = "Galeria";
         $data["imagens"] = $imagens;
         $data["id_galeria"] = $id_galeria;
+
         echo view('galeria', $data);
 	}
 
@@ -44,6 +45,7 @@ class Galeria extends BaseController
     {
         $data["id_galeria"] = $id_galeria;
         $data["mensagem"] = "";
+
         echo view('subir-imagem',$data);
     }
 
@@ -59,6 +61,7 @@ class Galeria extends BaseController
         {
             $data["id_galeria"] = $id_galeria;
             $data["mensagem"] = "Imagem fora do padrão, selecione outra.";
+
             echo view('subir-imagem',$data);
         }
         else

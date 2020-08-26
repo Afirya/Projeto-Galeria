@@ -3,6 +3,7 @@
 <?php $this->extend('template'); ?>
 
 <?php $this->section('content'); ?>
+
     <?php foreach ($galerias as $chave => $item) { ?>
         <p class="classe1">
             <a href="/galeria/<?php echo $item->id; ?>">
@@ -13,6 +14,7 @@
             </a>
         </p>
     <?php } ?>
+
     <a href="/galeria/adicionar" class="adicionar">
         Adicionar
     </a>

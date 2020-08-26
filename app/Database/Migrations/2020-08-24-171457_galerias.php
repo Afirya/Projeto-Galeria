@@ -23,8 +23,6 @@ class Galerias extends Migration
         $this->forge->createTable('galerias');
 	}
 
-	//--------------------------------------------------------------------
-
 	public function down()
 	{
         $this->forge->dropTable('galerias');

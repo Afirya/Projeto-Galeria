@@ -10,6 +10,7 @@ class Galerias extends BaseController
 
         $data["galerias"] = $galerias;
         $data["titulo"] = "Lista de Galerias";
+
         echo view('lista-galerias', $data);
     }
 }

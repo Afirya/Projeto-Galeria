@@ -27,8 +27,6 @@ class Fotos extends Migration
         $this->forge->createTable('fotos');
 	}
 
-	//--------------------------------------------------------------------
-
 	public function down()
 	{
         $this->forge->dropTable('fotos');
