@@ -1,7 +1,6 @@
-.remover {
-    color: red;
+.card-sobre {
+    /*border: 1px solid red;*/
+    height: 610px;
+    margin-bottom: 30px;
 }
 
-a:visited {
-    color: blue;
-}
