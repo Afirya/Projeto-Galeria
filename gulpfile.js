@@ -6,6 +6,7 @@ const {task, series} = require('gulp');
 
 task('css', function() {
     return gulp.src([
+        './vendor/twbs/bootstrap/dist/css/bootstrap.min.css',
         './public/css/galeria.css',
         './public/css/galerias.css',
         './public/css/menu.css',
@@ -18,6 +19,7 @@ task('css', function() {
 task('js', function() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.min.js',
+        './vendor/twbs/bootstrap/dist/js/bootstrap.min.js',
         './public/js/galeria.js',
     ])
         .pipe(concat('scripts.js'))
