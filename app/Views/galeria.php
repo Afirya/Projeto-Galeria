@@ -4,30 +4,44 @@
 <?php $this->extend('template'); ?>
 
 <?php $this->section('content'); ?>
-    <p>
-        Bem vindo a galeria de fotos da estagiária
-    </p>
 
-    <!-- Adiciona foto -->
-    <a href="/galeria/adicionar_imagem/<?php echo $id_galeria; ?>" class="adicionar-imagem">
-        Adicionar
-    </a>
+    <div class = "container">
 
-    <!-- Galeria -->
-    <div class="galeria">
-        <?php foreach ($imagens as $chave => $item) { ?>
-            <img src="<?php echo $item->caminho; ?>"  width="500" class="imagem" <?php echo ($chave > 0) ? 'style="display: none;"' : ''; ?> >
-        <?php } ?>
-    </div>
+        <h1 class="centro-margem">
+            Bem vindo a galeria.
+        </h1>
 
-    <!-- Controles -->
-    <div class="botões">
-        <button type="button" onclick="PassarAnterior();" class="botão">
-            Anterior
-        </button>
-        <button type="button" onclick="PassarProxima();" class="botão">
-            Próxima
-        </button>
+        <div class="centro-margem">
+            <a href="/galeria/adicionar_imagem/<?php echo $id_galeria; ?>" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">
+                Adicionar foto
+            </a>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 718px; margin: 0px auto;">
+            <div class="carousel-inner">
+				<?php foreach ($imagens as $chave => $item) { ?>
+                    <div class="carousel-item <?php echo ($chave == 0) ? 'active' : ''; ?>">
+                        <img src="<?php echo $item->caminho; ?>" class="d-block w-100" alt="não achou a imagem">
+                    </div>
+				<?php } ?>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">
+                    Previous
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">
+                    Next
+                </span>
+            </a>
+        </div>
+
+        <br>
+        <br>
+
     </div>
 
 <?php $this->endSection(); ?>

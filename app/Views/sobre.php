@@ -12,7 +12,7 @@
             Sobre este projeto
         </h1>
 
-        <h3 style="text-align: justify;">
+        <h3>
             Este projeto implementa um sistema para a criação e gerenciamento de galerias usando as tecnologias abaixo:
         </h3>
 

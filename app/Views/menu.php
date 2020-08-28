@@ -8,12 +8,12 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/home">
+                <a class="nav-link" href="/">
                     Home
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="/lista-galeria">
                     Galerias
                 </a>
             </li>
