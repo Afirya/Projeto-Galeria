@@ -80,10 +80,10 @@
                     <img class="card-img-top" src="/imagens/logos/css.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">
-                            CSS
+                            SASS
                         </h5>
                         <p class="card-text">
-                            Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.
+                            É uma linguagem de folhas de estilo  concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum.
                         </p>
                     </div>
                 </div>
