@@ -7,9 +7,6 @@ const {task, series} = require('gulp');
 task('css', function() {
     return gulp.src([
         './vendor/twbs/bootstrap/dist/css/bootstrap.min.css',
-        './public/css/galeria.css',
-        './public/css/galerias.css',
-        './public/css/menu.css',
         './public/css/comum.css',
     ])
     .pipe(concat('styles.css'))
