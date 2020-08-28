@@ -30,9 +30,10 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Galerias::index');
+$routes->get('/', 'Home::index');
 $routes->get('galeria/(:num)', 'Galeria::index/$1');
 $routes->get('sobre', 'Sobre::index');
+$routes->get('lista-galeria', 'Galerias::index');
 $routes->get('galeria/remover', 'Galeria::remover/$1');
 $routes->get('galeria/adicionar_imagem/(:num)', 'Galeria::adicionar_imagem/$1');
 $routes->post('galeria/subir_imagem/(:num)', 'Galeria::subir_imagem/$1');
