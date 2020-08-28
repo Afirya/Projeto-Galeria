@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
@@ -6,9 +7,9 @@ const {task, series} = require('gulp');
 
 task('css', function() {
     return gulp.src([
-        './vendor/twbs/bootstrap/dist/css/bootstrap.min.css',
-        './public/css/comum.css',
+        './public/scss/main.scss',
     ])
+    .pipe(sass( {outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('styles.css'))
     .pipe( gulp.dest('public/dist/css'))
 });
