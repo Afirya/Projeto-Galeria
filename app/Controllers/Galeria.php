@@ -5,7 +5,7 @@ class Galeria extends BaseController
 	public function index($id_galeria)
 	{
         $db = \Config\Database::connect();
-        $query = $db->query("select * from fotos where id_galeria = $id_galeria;");
+        $query = $db->query("select * from fotos where id_galeria = $id_galeria");
         $imagens = $query->getResult();
 
         $data["titulo"] = "Galeria";
@@ -20,12 +20,14 @@ class Galeria extends BaseController
         $db = \Config\Database::connect();
         $query = $db->query("delete from galerias where id = $id;");
 
-        return redirect()->to('/');
+        return redirect()->to('/lista-galeria');
     }
 
     public function adicionar()
     {
-       echo view('criar-galeria');
+		$data["titulo"] = "Criar galeria";
+
+        echo view('criar-galeria',$data);
     }
 
     public function criar()
@@ -38,13 +40,14 @@ class Galeria extends BaseController
             'data' => $data
         ]);
 
-        return redirect()->to('/');
+        return redirect()->to('/lista-galeria');
     }
 
     public function adicionar_imagem($id_galeria)
     {
         $data["id_galeria"] = $id_galeria;
         $data["mensagem"] = "";
+		$data["titulo"] = "Adicionar foto";
 
         echo view('subir-imagem',$data);
     }
